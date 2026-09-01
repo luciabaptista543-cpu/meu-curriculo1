@@ -1,0 +1,4 @@
+Coloque aqui o seu ficheiro de áudio de apresentação:
+- apresentacao.ogg
+
+Já configurado em index.html (formato .ogg, conforme já tem gravado).

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre &amp; Currículo — Lúcia Baptista</title>
+  <meta name="description" content="Formação académica, experiência e competências técnicas de Lúcia Baptista.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a href="#conteudo" class="saltar-link">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <p class="logotipo">lucia_baptista<span>.dev</span></p>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li><a href="index.html">index.html</a></li>
+          <li><a href="about.html" class="activo" aria-current="page">about.html</a></li>
+          <li><a href="portfolio.html">portfolio.html</a></li>
+          <li><a href="hobbies.html">hobbies.html</a></li>
+          <li><a href="contact.html">contact.html</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="seccao container">
+      <span class="rotulo-comentario">// sobre mim</span>
+      <h1>Currículo</h1>
+      <p>Uma visão geral da minha formação académica, experiência e competências técnicas.</p>
+    </section>
+
+    <!-- ================= FORMAÇÃO ACADÉMICA ================= -->
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <span class="rotulo-comentario">/* formação académica */</span>
+        <h2>Formação académica</h2>
+        <ol>
+          <li>
+            <strong>[Nome do curso]</strong> &mdash; [Nome da instituição]
+            <br><small class="ajuda">[Ano de início] &ndash; presente</small>
+            <br><small class="ajuda"><em>Lúcia: substitua pelos seus dados reais de formação.</em></small>
+          </li>
+        </ol>
+
+        <h3>Certificados</h3>
+        <p>
+          <em>Lúcia: se tiver certificados, adicione aqui dentro de blocos
+          <code>&lt;figure&gt;</code>/<code>&lt;figcaption&gt;</code>, como no exemplo abaixo comentado.</em>
+        </p>
+        <!--
+        <figure class="cartao">
+          <img src="assets/img/certificado-exemplo.jpg" alt="Descrição do certificado" width="400" height="280">
+          <figcaption class="cartao__corpo">Nome do certificado (ano)</figcaption>
+        </figure>
+        -->
+      </div>
+    </section>
+
+    <!-- ================= EXPERIÊNCIA ================= -->
+    <section class="seccao">
+      <div class="container">
+        <span class="rotulo-comentario">/* experiência */</span>
+        <h2>Experiência</h2>
+        <ul>
+          <li><strong>[Experiência 1]</strong> &mdash; <em>Lúcia: descreva aqui uma experiência real (trabalho, voluntariado, projeto).</em></li>
+          <li><strong>[Experiência 2]</strong> &mdash; <em>Lúcia: pode remover esta linha se só tiver uma experiência para mostrar.</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= COMPETÊNCIAS TÉCNICAS (TABELA) ================= -->
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <span class="rotulo-comentario">/* competências técnicas */</span>
+        <h2>Nível de proficiência em tecnologias</h2>
+
+        <table class="tabela-competencias">
+          <caption>Autoavaliação do nível de utilização de cada tecnologia (escala 0&ndash;100%)</caption>
+          <thead>
+            <tr>
+              <th scope="col" colspan="2">Categoria / Tecnologia</th>
+              <th scope="col">Nível</th>
+              <th scope="col">Anos de uso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="2">Frontend</th>
+              <th scope="row">HTML5</th>
+              <td><span class="nivel" style="--valor: 50%;" role="img" aria-label="nível a ajustar"></span></td>
+              <td>[?]</td>
+            </tr>
+            <tr>
+              <th scope="row">CSS3</th>
+              <td><span class="nivel" style="--valor: 50%;" role="img" aria-label="nível a ajustar"></span></td>
+              <td>[?]</td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="1">Ferramentas</th>
+              <th scope="row">Git &amp; GitHub</th>
+              <td><span class="nivel" style="--valor: 50%;" role="img" aria-label="nível a ajustar"></span></td>
+              <td>[?]</td>
+            </tr>
+          </tbody>
+          <!-- Lúcia: ajuste as linhas acima com as suas tecnologias e níveis reais.
+               Pode copiar uma linha <tr>...</tr> para adicionar mais tecnologias. -->
+        </table>
+
+        <p><a href="assets/ficheiros/cv.pdf" class="botao botao--secundario" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Descarregar CV em PDF</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <address style="font-style: normal;">
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> lucia.baptista@email.com</p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +258 86 136 7029 / 85 244 3036</p>
+      </address>
+      <!-- Substitua "#" pelo link real do perfil de GitHub da Lúcia -->
+      <ul class="rodape__redes">
+        <li><a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="rodape__assinatura">Desenvolvido por Lúcia Baptista &mdash; &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

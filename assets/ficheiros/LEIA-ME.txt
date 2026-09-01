@@ -1,0 +1,4 @@
+Coloque aqui o seu CV em PDF:
+- cv.pdf
+
+Referenciado em about.html através do botão "Descarregar CV em PDF".

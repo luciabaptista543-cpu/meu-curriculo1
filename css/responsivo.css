@@ -1,0 +1,95 @@
+/* =========================================================================
+   RESPONSIVO.CSS — media queries
+   Abordagem MOBILE-FIRST: o ficheiro estilo.css já contém os estilos-base
+   pensados para ecrãs pequenos (menu empilhado, flex em coluna, grid a
+   uma coluna). Aqui só AMPLIAMOS o layout à medida que o ecrã cresce,
+   usando min-width — nunca max-width isolado, para não sobrepor regras.
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   Ponto de quebra 1: a partir de 481px (telemóveis grandes / phablets)
+   ------------------------------------------------------------------------- */
+@media (min-width: 481px) {
+  .lista-competencias-curtas {
+    justify-content: center;
+  }
+
+  .flex-item {
+    /* hobbies: passa a caber 2 cartões por linha */
+    flex: 1 1 calc(50% - var(--esp-md));
+  }
+
+  .rodape__grelha {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Ponto de quebra 2: a partir de 769px (tablets e desktop)
+   ------------------------------------------------------------------------- */
+@media (min-width: 769px) {
+  body {
+    font-size: 1.05rem;
+  }
+
+  .container {
+    padding-inline: var(--esp-lg);
+  }
+
+  /* Menu deixa de ser "hamburger" e passa a barra horizontal permanente */
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .nav-principal {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+    border-bottom: none;
+  }
+
+  .nav-principal__lista {
+    flex-direction: row;
+    padding: 0;
+    gap: var(--esp-md);
+  }
+
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  .hero__conteudo {
+    flex: 1;
+  }
+
+  .flex-item {
+    /* hobbies: 3 a 4 cartões por linha em ecrãs largos */
+    flex: 1 1 calc(25% - var(--esp-md));
+  }
+
+  .grelha-projetos {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--esp-lg);
+  }
+
+  /* unidade vw usada de forma pontual para uma faixa decorativa que deve
+     ocupar sempre a largura da janela, independentemente do container */
+  .rotulo-comentario {
+    font-size: 0.95rem;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Ponto de quebra 3: ecrãs muito largos — limita crescimento excessivo
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .hero__avatar {
+    width: 220px;
+    height: 220px;
+  }
+}

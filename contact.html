@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Lúcia Baptista</title>
+  <meta name="description" content="Formulário de contacto de Lúcia Baptista.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a href="#conteudo" class="saltar-link">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <p class="logotipo">lucia_baptista<span>.dev</span></p>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li><a href="index.html">index.html</a></li>
+          <li><a href="about.html">about.html</a></li>
+          <li><a href="portfolio.html">portfolio.html</a></li>
+          <li><a href="hobbies.html">hobbies.html</a></li>
+          <li><a href="contact.html" class="activo" aria-current="page">contact.html</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="seccao container">
+      <span class="rotulo-comentario">// falar comigo</span>
+      <h1>Contacto</h1>
+      <p>Preencha o formulário abaixo. Todos os campos assinalados como obrigatórios são validados
+        automaticamente pelo navegador, sem recurso a JavaScript.</p>
+    </section>
+
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <!--
+          NOTA: como não é permitido JavaScript, este formulário não tem
+          destino de envio real (backend). O atributo "action" aponta para
+          uma página fictícia apenas para fins de demonstração académica.
+        -->
+        <form action="#" method="post" novalidate="false">
+
+          <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <div class="campo">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" required minlength="3" maxlength="80" placeholder="Escreva o seu nome" autocomplete="name">
+              <small class="ajuda">Mínimo de 3 caracteres.</small>
+            </div>
+
+            <div class="campo">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="nome@exemplo.com" autocomplete="email">
+              <small class="ajuda">Formato validado automaticamente pelo navegador.</small>
+            </div>
+
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" pattern="8[2-7][0-9]{7}" placeholder="8XXXXXXXX" autocomplete="tel">
+              <small class="ajuda">Formato moçambicano: 9 dígitos começados por 82, 83, 84, 85, 86 ou 87.</small>
+            </div>
+
+            <div class="campo">
+              <label for="data-contacto">Data preferida de contacto</label>
+              <input type="date" id="data-contacto" name="data-contacto">
+            </div>
+
+            <div class="campo">
+              <label for="horas">Melhor hora do dia (0&ndash;23h)</label>
+              <input type="number" id="horas" name="horas" min="0" max="23" step="1" placeholder="Ex: 14">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Motivo do contacto</legend>
+
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto" required>
+                <option value="" selected disabled>Escolha uma opção</option>
+                <option value="proposta-emprego">Proposta de emprego / estágio</option>
+                <option value="projeto">Colaboração num projeto</option>
+                <option value="duvida">Dúvida geral</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <p>Como prefere ser contactado(a)?</p>
+              <div class="opcao">
+                <input type="radio" id="pref-email" name="preferencia" value="email" checked>
+                <label for="pref-email">Email</label>
+              </div>
+              <div class="opcao">
+                <input type="radio" id="pref-telefone" name="preferencia" value="telefone">
+                <label for="pref-telefone">Telefone</label>
+              </div>
+              <div class="opcao">
+                <input type="radio" id="pref-whatsapp" name="preferencia" value="whatsapp">
+                <label for="pref-whatsapp">WhatsApp</label>
+              </div>
+            </div>
+
+            <div class="campo">
+              <p>Interessa-me saber mais sobre: (pode escolher mais do que uma)</p>
+              <div class="opcao">
+                <input type="checkbox" id="int-frontend" name="interesses" value="frontend">
+                <label for="int-frontend">Desenvolvimento Frontend</label>
+              </div>
+              <div class="opcao">
+                <input type="checkbox" id="int-backend" name="interesses" value="backend">
+                <label for="int-backend">Desenvolvimento Backend</label>
+              </div>
+              <div class="opcao">
+                <input type="checkbox" id="int-design" name="interesses" value="design">
+                <label for="int-design">Design/UI</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Anexo &amp; mensagem</legend>
+
+            <div class="campo">
+              <label for="ficheiro">Anexar CV ou portfólio</label>
+              <input type="file" id="ficheiro" name="ficheiro" accept=".pdf,.doc,.docx">
+              <small class="ajuda">Formatos aceites: PDF, DOC ou DOCX.</small>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" required minlength="10" maxlength="500" placeholder="Escreva a sua mensagem..."></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="botao">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <address style="font-style: normal;">
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> lucia.baptista@email.com</p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +258 86 136 7029 / 85 244 3036</p>
+      </address>
+      <!-- Substitua "#" pelo link real do perfil de GitHub da Lúcia -->
+      <ul class="rodape__redes">
+        <li><a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="rodape__assinatura">Desenvolvido por Lúcia Baptista &mdash; &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

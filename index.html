@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lúcia Baptista — Currículo &amp; Portfólio</title>
+  <meta name="description" content="Site pessoal de currículo e portfólio de Lúcia Baptista, estudante de Informática.">
+
+  <!-- Google Fonts (recurso tipográfico, não é framework de layout) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome via CDN (apenas ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a href="#conteudo" class="saltar-link">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <p class="logotipo">lucia_baptista<span>.dev</span></p>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li><a href="index.html" class="activo" aria-current="page">index.html</a></li>
+          <li><a href="about.html">about.html</a></li>
+          <li><a href="portfolio.html">portfolio.html</a></li>
+          <li><a href="hobbies.html">hobbies.html</a></li>
+          <li><a href="contact.html">contact.html</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= HERO ================= -->
+    <section class="seccao hero container">
+      <div class="hero__conteudo">
+        <span class="rotulo-comentario animar-surgir">// olá, seja bem-vindo(a)</span>
+        <h1 class="animar-surgir">Lúcia Baptista</h1>
+        <p class="hero__tagline animar-surgir">Estudante de Informática &mdash; a construir soluções web, um <code>&lt;div&gt;</code> semântico de cada vez.</p>
+        <p class="animar-surgir">
+          Sou estudante de Informática, com interesse em desenvolvimento web, design e
+          resolução de problemas. Este site foi construído inteiramente em HTML5 e CSS3 puros,
+          sem frameworks nem JavaScript.
+          <!-- Lúcia: ajuste este parágrafo com informação real sobre si -->
+        </p>
+
+        <ul class="lista-competencias-curtas animar-surgir">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Design Web</li>
+        </ul>
+
+        <p class="animar-surgir">
+          <a href="contact.html" class="botao">Entrar em contacto</a>
+          <a href="portfolio.html" class="botao botao--secundario">Ver projetos</a>
+        </p>
+      </div>
+
+      <figure>
+        <img
+          src="assets/img/avatar.jpg"
+          alt="Fotografia de Lúcia Baptista, estudante de Informática, sorrindo para a câmara"
+          class="hero__avatar"
+          width="220" height="220">
+      </figure>
+    </section>
+
+    <!-- ================= VÍDEO DE APRESENTAÇÃO ================= -->
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <span class="rotulo-comentario">/* apresentação em vídeo */</span>
+        <h2>Um pouco sobre mim, em vídeo</h2>
+        <p>Um breve vídeo de apresentação pessoal (poucos segundos), gravado por mim.</p>
+
+        <video controls poster="assets/img/poster-video.jpg" preload="metadata">
+          <source src="assets/video/apresentacao.mp4" type="video/mp4">
+          <source src="assets/video/apresentacao.webm" type="video/webm">
+          O seu navegador não suporta a reprodução de vídeo nativo. Pode
+          <a href="assets/video/apresentacao.mp4">descarregar o vídeo aqui</a>.
+        </video>
+      </div>
+    </section>
+
+    <!-- ================= ÁUDIO ================= -->
+    <section class="seccao">
+      <div class="container">
+        <span class="rotulo-comentario">/* apresentação em áudio */</span>
+        <h2>Prefere ouvir?</h2>
+        <p>Esta é uma breve apresentação em áudio, caso prefira "ouvir" o meu currículo em vez de o ler.</p>
+
+        <audio controls>
+          <source src="assets/audio/apresentacao.ogg" type="audio/ogg">
+          O seu navegador não suporta o elemento de áudio. Pode
+          <a href="assets/audio/apresentacao.ogg">descarregar o ficheiro áudio aqui</a>.
+        </audio>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <address style="font-style: normal;">
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> lucia.baptista@email.com</p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +258 86 136 7029 / 85 244 3036</p>
+      </address>
+
+      <!-- Substitua "#" pelo link real do perfil de GitHub da Lúcia -->
+      <ul class="rodape__redes">
+        <li><a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="rodape__assinatura">Desenvolvido por Lúcia Baptista &mdash; &copy; 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>

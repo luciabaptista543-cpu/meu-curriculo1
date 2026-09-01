@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio — Lúcia Baptista</title>
+  <meta name="description" content="Projetos e trabalhos desenvolvidos por Lúcia Baptista.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a href="#conteudo" class="saltar-link">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <p class="logotipo">lucia_baptista<span>.dev</span></p>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li><a href="index.html">index.html</a></li>
+          <li><a href="about.html">about.html</a></li>
+          <li><a href="portfolio.html" class="activo" aria-current="page">portfolio.html</a></li>
+          <li><a href="hobbies.html">hobbies.html</a></li>
+          <li><a href="contact.html">contact.html</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="seccao container">
+      <span class="rotulo-comentario">// projetos</span>
+      <h1>Portfólio</h1>
+      <p>Uma seleção de projetos académicos e pessoais. A grelha abaixo é construída com <strong>CSS Grid</strong>.</p>
+    </section>
+
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <div class="grelha-projetos">
+
+          <!-- Lúcia: substitua os 3 cartões abaixo pelos seus projetos reais -->
+          <article class="cartao">
+            <img src="assets/img/projeto1.jpg" alt="[Descreva a captura de ecrã do projeto 1]" width="400" height="240">
+            <div class="cartao__corpo">
+              <h3>[Nome do Projeto 1]</h3>
+              <p>[Breve descrição do que o projeto faz e que tecnologias usou.]</p>
+              <span class="cartao__tag">[Tecnologia]</span>
+              <p><a href="[link do repositório GitHub]" target="_blank" rel="noopener">Ver repositório <i class="fa-brands fa-github" aria-hidden="true"></i></a></p>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <img src="assets/img/projeto2.jpg" alt="[Descreva a captura de ecrã do projeto 2]" width="400" height="240">
+            <div class="cartao__corpo">
+              <h3>[Nome do Projeto 2]</h3>
+              <p>[Breve descrição do que o projeto faz e que tecnologias usou.]</p>
+              <span class="cartao__tag">[Tecnologia]</span>
+              <p><a href="[link do repositório GitHub]" target="_blank" rel="noopener">Ver repositório <i class="fa-brands fa-github" aria-hidden="true"></i></a></p>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <img src="assets/img/projeto3.jpg" alt="[Descreva a captura de ecrã do projeto 3]" width="400" height="240">
+            <div class="cartao__corpo">
+              <h3>[Nome do Projeto 3]</h3>
+              <p>[Breve descrição do que o projeto faz e que tecnologias usou.]</p>
+              <span class="cartao__tag">[Tecnologia]</span>
+              <p><a href="[link do repositório GitHub]" target="_blank" rel="noopener">Ver repositório <i class="fa-brands fa-github" aria-hidden="true"></i></a></p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <address style="font-style: normal;">
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> lucia.baptista@email.com</p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +258 86 136 7029 / 85 244 3036</p>
+      </address>
+      <!-- Substitua "#" pelo link real do perfil de GitHub da Lúcia -->
+      <ul class="rodape__redes">
+        <li><a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="rodape__assinatura">Desenvolvido por Lúcia Baptista &mdash; &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

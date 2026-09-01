@@ -1,0 +1,6 @@
+Coloque aqui as suas imagens, com estes nomes (ou atualize os caminhos no HTML):
+- avatar.jpg                 (foto/avatar usado na Home)
+- poster-video.jpg            (imagem de pré-visualização do vídeo da Home)
+- projeto1.jpg, projeto2.jpg, projeto3.jpg   (capturas de ecrã - portfolio.html)
+
+Opcional: fotos de certificados (about.html), caso tenha algum.

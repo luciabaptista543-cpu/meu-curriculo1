@@ -1,5 +1,3 @@
-> ⚠️ **Nota:** este ficheiro foi gerado a partir de um template partilhado. Onde vir texto entre colchetes [assim], ou comentários "Lúcia: ...", substitua pela sua informação real antes de entregar.
-
 # Site de Currículo Pessoal — Lúcia Baptista
 
 **Estudante:** Lúcia Baptista

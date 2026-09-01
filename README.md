@@ -1,4 +1,5 @@
 # Site de Currículo Pessoal — Lúcia Baptista
+**Site publicado:** https://luciabaptista543-cpu.github.io/meu-curriculo1/
 
 **Estudante:** Lúcia Baptista
 **Turma:** 2º Ano — Licenciatura em Informática — Programação de Design Web
